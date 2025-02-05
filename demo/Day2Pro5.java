@@ -20,7 +20,9 @@ public class Day2Pro5 {
 			  System.out.println(i);
 			  
 		  }
-		 
+		  for( String i : cars) {
+			  System.out.println(i);
+		  }
 
 	}
 
