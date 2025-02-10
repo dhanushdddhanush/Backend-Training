@@ -2,12 +2,12 @@ package Day5;
 
 public class Fibonacci {
 	
-		protected int series(int n) {
-			if(n<=1) {
-				return n;
+		protected int series(int num) {
+			if(num<=1) {
+				return num;
 			}
 			
-			return series(n-1)+series(n-2);
+			return series(num-1)+series(num-2);
 			
 		}
 

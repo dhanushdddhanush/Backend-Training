@@ -5,8 +5,8 @@ public class Factorial {
 
 	protected int fact(int n) {
 		int sum=1;
-		for(int i=1;i<=n;i++) {
-			sum=sum*i;
+		for(int initialize=1;initialize<=n;initialize++) {
+			sum=sum*initialize;
 			
 		}
 		return sum;

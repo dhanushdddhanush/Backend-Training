@@ -2,8 +2,8 @@ package Day5;
 
 public class Temperature {
 	
-	protected double convert(double n) {
-		 double output=1.8*n+32;
+	protected double convert(double num) {
+		 double output=1.8*num+32;
 		 return output;
 		
 	}

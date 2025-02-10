@@ -29,8 +29,8 @@ public class Execution {
 		  */
 		 Fibonacci fib=new Fibonacci();
 		 
-		 for(int i=0;i<=10;i++) {
-		 System.out.println(fib.series(i));
+		 for(int initialize=0;initialize<=10;initialize++) {
+		 System.out.println(fib.series(initialize));
 		 }
 	}
 
