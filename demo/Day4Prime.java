@@ -1,7 +1,9 @@
 package demo;
 
 import java.util.Scanner;
-
+/*
+ * here we check divisors up to square root  times if no divisor it is prime else not prime
+ */
 public class Day4Prime {
     public static void checkPrime(int n) {
         int count = 0;
@@ -34,7 +36,7 @@ public class Day4Prime {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter the number of prime numbers u want30: ");
+        System.out.print("Enter the number of prime numbers u want: ");
         int n = sc.nextInt();
        checkPrime(n);
       

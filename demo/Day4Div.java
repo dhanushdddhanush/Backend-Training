@@ -1,5 +1,9 @@
 package demo;
 import java.util.*;
+/*
+ * here if  number dived by 5 then we have to skip those 
+ * and rest we have to show whether the number is divided by 2 or 3 and print it
+ */
 public class Day4Div {
 
 	public static void main(String[] args) {

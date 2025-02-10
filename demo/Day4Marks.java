@@ -2,6 +2,16 @@ package demo;
 
 import java.util.Scanner;
 
+/*
+ * here we take marks as input and according to our given condition we have to classing according to marks grades
+ * 90-100 -> print "Grade A" 
+80-89 -> print "Grade B" 
+70-79-> print "Grade C" 
+60-69-> print "Grade D" 
+0-59-> print "Grade F" 
+> 100 -> Invalid 
+< 0 -> invalid
+ */
 public class Day4Marks {
 
 	public static void main(String[] args) {
