@@ -4,9 +4,9 @@ public class ConstructorStudentExample {
 	int id;
 	String name;
 
-	ConstructorStudentExample(int i, String n) {
-		id = i;
-		name = n;
+	ConstructorStudentExample(int id1, String name1) {
+		id = id1;
+		name = name1;
 	}
 
 	void display() {

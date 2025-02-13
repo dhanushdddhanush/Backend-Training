@@ -5,15 +5,15 @@ public class ConOverloading {
 	String name;
 	int age;
 
-	public ConOverloading(int i, String n) {
-		id = i;
-		name = n;
+	public ConOverloading(int id1, String name1) {
+		id = id1;
+		name = name1;
 	}
 
-	public ConOverloading(int i, String n, int a) {
-		id = i;
-		name = n;
-		age = a;
+	public ConOverloading(int id2, String name2, int age1) {
+		id = id2;
+		name = name2;
+		age = age1;
 	}
 
 	void display() {

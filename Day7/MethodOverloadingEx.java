@@ -6,7 +6,7 @@ public class MethodOverloadingEx {
 	}
 
 	void over(int age) {
-		System.out.println("Age: " + age);
+		System.out.println("Age is: " + age);
 	}
 
 	public static void main(String[] args) {
