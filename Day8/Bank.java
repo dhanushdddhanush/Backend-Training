@@ -2,8 +2,8 @@ package Day8;
 
 public class Bank {
  public static void main(String[] args) {
-	 DefaultBankRbi axis = new AxisBank(1000);
-	 DefaultBankRbi lic = new Lic(1500);
+	 AxisBank axis = new AxisBank(10000);
+	 Lic lic = new Lic(1500);
 
      System.out.println("Axis Bank");
      axis.checkBalance();
