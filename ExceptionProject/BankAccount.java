@@ -8,25 +8,44 @@ public class BankAccount implements Bank {
 		 this.accountNumber=accountNumber;
 		 this.balance=balance;
 	 }
-	 public void display() {
+	 /**
+	 *displaying the details
+	 */
+	public void display() {
 		 System.out.println("account number is :"+accountNumber);
 		 System.out.println("balance is :"+balance);
 		 
 	 }
-	 public double getbalance() {
+	 /**
+	 * @return returning balance
+	 */
+	public double getbalance() {
 		return balance;
 	 }
-	 public String getaccountNumber() {
+	 /**
+	 * @return returning account number
+	 */
+	public String getaccountNumber() {
 		 return accountNumber;
 	 }
-	 public void setbalance(double balance) {
+	 /**
+	 * @param balance
+	 */
+	public void setbalance(double balance) {
 		 this.balance=balance;
 	 }
 }
 	 
 	 
 	 
-	 
+
+
+
+
+
+
+
+
 //	 public void deposit(int amount) {
 //		 balance+=amount;
 //		 System.out.println("Deposit of Rs."+amount+" successful");

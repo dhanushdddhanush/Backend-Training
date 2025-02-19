@@ -9,6 +9,9 @@ public class Deposit implements Bank {
 
 	
 	
+	/**
+	 * @param amount
+	 */
 	public void deposit(double amount) {
 		try {
 			if(amount<0) {
@@ -21,6 +24,9 @@ public class Deposit implements Bank {
 		}
 	 }
 
+	/**interface display method
+	 *
+	 */
 	public void display() {
 		System.out.println("Your acount no "+account.getaccountNumber()+" balance is Rs."+account.getbalance());
 		

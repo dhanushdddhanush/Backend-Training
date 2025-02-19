@@ -5,6 +5,9 @@ public class Withdraw implements Bank{
 	public Withdraw(BankAccount account) {
 		this.account=account;
 	}
+	/**
+	 * @param amount
+	 */
 	public void withdraw(double amount) {
 try {
 		if(amount>account.getbalance()) {
@@ -23,6 +26,9 @@ try {
 		
 	}
 	
+	/**
+	 *diplaying balance
+	 */
 	public void display() {
 		System.out.println("Your acount no "+account.getaccountNumber()+" balance is Rs."+account.getbalance());
 		
