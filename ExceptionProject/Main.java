@@ -15,6 +15,7 @@ public class Main {
 		try {
 		if(accnumber.equals("SBI001")||accnumber.equals("SBI002")) {
 		System.out.println("Welcome to bank");
+		while(true) {
 		System.out.println("\nBrowse from below services");
 		 System.out.println("1. Deposit");
          System.out.println("2. Withdraw");
@@ -80,7 +81,7 @@ public class Main {
          
          }
 		}
-		
+		}
 		
          else {
         	 throw new InvalidAccountException("Invalid Account Number");
