@@ -70,17 +70,19 @@ public class MainFile {
 		System.out.println("ArrayList: ");
 		System.out.println(list);
 
-		System.out.println("HashSet: ");
+		System.out.println("\nHashSet: ");
 		System.out.println(set);
 
-		System.out.println("Vector: ");
+		System.out.println("\nVector: ");
 		System.out.println(vector);
 
-		System.out.println("Queue: ");
+		System.out.println("\nQueue: ");
 		System.out.println(queue);
+		
 		System.out.println("\n");
 		System.out.println("Set Methods:");
 		System.out.println("Set Size: "+set.size()+"\nSet isempty: "+set.isEmpty());
+		
 		System.out.println("\nArraylist Methods:");
 		System.out.println("Arraylist Size: "+list.size()+"\nList get: "+list.get(0)+"\nList isempty: "+list.isEmpty());
 
