@@ -31,6 +31,16 @@ public class MainFile {
 		subject3.add("SQL");
 		subject3.add("Mongodb");
 		Person person3 = new Person("Chandu", 23, "Bhubaneswar", subject3);
+		
+
+		/**
+		 * Create a list of subjects for person 4
+		 */
+		List<String> subject4 = new ArrayList<>();
+		subject4.add("Cloud");
+		subject4.add("SQL");
+		subject4.add("Mongodb");
+		Person person4 = new Person("Chandu", 23, "Bhubaneswar", subject3);
 
 		/**
 		 * Create an ArrayList to hold Person objects
@@ -39,13 +49,14 @@ public class MainFile {
 		list.add(person1);
 		list.add(person2);
 		list.add(person3);
-
+		list.add(person4);
 		/**
 		 * Create a HashSet to hold Person objects
 		 */
 		Set<Person> set = new HashSet<>();
-		set.add(person1);
-		set.add(person2);
+		set.add(person4);
+		set.add(person4);
+		set.add(person4);
 		set.add(person3);
 
 		/**
@@ -85,6 +96,11 @@ public class MainFile {
 		
 		System.out.println("\nArraylist Methods:");
 		System.out.println("Arraylist Size: "+list.size()+"\nList get: "+list.get(0)+"\nList isempty: "+list.isEmpty());
+		
+		
+		
+		System.out.println("\n\n");
+		System.out.println(set);
 
 	}
 }
