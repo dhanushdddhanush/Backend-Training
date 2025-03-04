@@ -7,7 +7,7 @@ public class BankAccounts{
 	
 	public void addBankAccount(BankAccount bank) {
 		
-		String acccountType = bank.getaccountType();
+		String acccountType = bank.getAccountType();
 		if (! accountsMap.containsKey(acccountType)) {
 			 accountsMap.put(acccountType, new ArrayList<>());
 		}
@@ -16,16 +16,16 @@ public class BankAccounts{
         System.out.println("Bank Account added: " + bank);
 	}
 	public void displayAccountsByType(String accountType) {
-        List<BankAccount> accounts = accountsMap.get(accountType);
-        if (accounts.isEmpty()) {
-            System.out.println("No accounts found for type: " + accountType);
-        } else {
-           System.out.println("details are");
-            for (BankAccount bank : accounts) {
-				System.out.println(bank);
+	    List<BankAccount> accounts = accountsMap.get(accountType);
+	    
+	    if (accounts != null) {
+	    	accounts.sort((BankAccount1, BankAccount2) -> BankAccount2.getBalance().compareTo(BankAccount1.getBalance()));
+			for (BankAccount banks : accounts) {
+				System.out.println(banks);
 			}
-        }
-    }
+		}
+	}
+
+	
 
 }
-

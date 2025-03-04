@@ -1,6 +1,5 @@
 package BankProject;
 import java.util.*;
-
 public class BankMain {
 	
 	public static void main(String[] args) {
@@ -27,14 +26,22 @@ public class BankMain {
                 System.out.print("Enter Account Type : ");
                 String type = scanner.nextLine();
 
-               bankAccounts.addBankAccount(new BankAccount(accNum, name, balance, type));
+                if (type.equalsIgnoreCase("Savings")) {
+                    System.out.print("Enter Interest Rate: ");
+                    int interest = scanner.nextInt();
+                    scanner.nextLine();
+                    bankAccounts.addBankAccount(new SavingsAccount(accNum, name, balance, type, interest));
                 
+                } else {
+                    bankAccounts.addBankAccount(new BankAccount(accNum, name, balance, type));
+                }
             } catch (InvalidAccountTypeException | MinimumBalanceException e) {
                 System.out.println("Error: " + e.getMessage());
-              
             }
-            
         }
+        System.out.print("\nEnter account type to sort: ");
+        String sort = scanner.nextLine();
+        bankAccounts.displayAccountsByType(sort);
 	
 	}
 }
